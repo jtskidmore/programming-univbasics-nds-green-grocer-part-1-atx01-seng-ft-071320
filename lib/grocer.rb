@@ -10,6 +10,6 @@ end
 
 def consolidate_cart(cart)
   
-  item_name = 
+  
   
 end
