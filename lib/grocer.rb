@@ -11,7 +11,7 @@ def consolidate_cart(cart)
   
   counter = 0
   cart.each do |hash|
-    cart[counter].store
+    cart[counter].store(:count, 1)
     counter += 1
   end
   
