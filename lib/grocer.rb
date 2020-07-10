@@ -10,6 +10,8 @@ end
 
 def consolidate_cart(cart)
   
-  
+  cart.each do |element|
+    cart[cart.index(element)][:count] = 1
+  end
   
 end
