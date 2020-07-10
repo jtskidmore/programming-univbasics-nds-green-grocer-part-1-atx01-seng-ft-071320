@@ -10,15 +10,11 @@ end
 
 def consolidate_cart(cart)
   
+  new_cart = cart
   
-  new_cart = []
-  
-  cart.each do |hash|
-    if new_cart.include?(hash)
-      new_cart[new_cart.index(hash)][:count] += 1
-    else
-      new_cart << hash
-    end
+  new_cart.each do |element|
+    item_name = element[:item]
+    item_hash = find_item_by_name_in_collection(item_name, cart)
   end
   
 end
