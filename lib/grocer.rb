@@ -9,10 +9,8 @@ end
 
 def consolidate_cart(cart)
   
-  counter = 0
   cart.each do |hash|
-    cart[counter].store(:count, 1)
-    counter += 1
+    hash[:count] = 1
   end
   
   counter_hash = Hash.new(0)
@@ -30,7 +28,6 @@ def consolidate_cart(cart)
   
 
   
- cart = new_cart
- cart
+   new_cart
 
 end
